@@ -20,6 +20,8 @@ app.use(cors());
 app.use(express.json());
 
 // Set up our routes
+// app.use(path, callback)
+// app.use is called every time a request is sent to the server
 app.use('/classes', router);
 
 // Serve the client files
